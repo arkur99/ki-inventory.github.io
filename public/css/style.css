@@ -1,0 +1,42 @@
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-brand>.brand-caption>p {
+    margin: 0;
+}
+
+.navbar-brand>.brand-container {
+    width: 80px;
+    margin-right: 17px;
+}
+
+.navbar-brand>.brand-container>.brand {
+    width: 100%;
+}
+
+.navbar-brand>.brand-caption {
+    line-height: 1, 2;
+    margin-left: 10px;
+}
+
+.navbar-brand>.brand-container>.title {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.navbar-brand>.brand-caption>.caption {
+    color: gray;
+}
+
+.bg-primary {
+    background-color: #00796b !important;
+}
+
+.bg-secondary {
+    background-color: #ffb300 !important;
+}
+
+.text-primary {
+    color: #00796b !important;
+}

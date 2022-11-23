@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\HomeController;
-use App\Http\Controllers\authController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +12,24 @@ use App\Http\Controllers\authController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//pemanggilan view to routes
-// Route::get('/', function () {
-//     return view('login');
-// });
-Route::get('/beranda',function(){
-    return view('home');
-});
-//pemanggilan controller to routes
-// Route::get('/dashboard',[HomeController::class,'index']);
-Route::get('/',[authController::class,'index']);
 
+Route::get('/', function () {
+    return view('homepage');
+});
+
+Route::get('/lowongan', function(){
+    return view('application/lowongan');
+});
+
+Route::get('/login', function(){
+    return view('application/login');
+});
+Route::get('/artikel', function(){
+    return view('application/artikel');
+});
+Route::get('/jobdetail', function(){
+    return view('application/jobdetail');
+});
+Route::get('/list', function(){
+    return view('application/listdata');
+});
